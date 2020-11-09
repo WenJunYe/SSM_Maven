@@ -15,5 +15,8 @@ public class TestSpring {
         UserService us= (UserService) ac.getBean("userService");
         //调用方法
         us.findAll();
+
+        System.out.println("更新1——test");
+
     }
 }
