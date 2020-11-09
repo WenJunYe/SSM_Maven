@@ -1,0 +1,6 @@
+com\vincen\test\TestSpring.class
+com\vincen\controller\UserController.class
+com\vincen\dao\UserDao.class
+com\vincen\domain\User.class
+com\vincen\service\UserService.class
+com\vincen\service\impl\UserServiceImpl.class
