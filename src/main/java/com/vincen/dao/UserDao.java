@@ -13,8 +13,8 @@ import java.util.List;
 @Repository
 public interface UserDao {
     //查询所有用户
-    @Select("select * from user")
+    @Select("select * from users")
     public List<User> findAll();
-    @Insert("insert into user (name,password) values (#{name},#{password})")
+    @Insert("insert into users (user_name,user_password,user_role_id) values (#{user_name},#{user_password},1)")
     public void SaveUser(User user);
 }

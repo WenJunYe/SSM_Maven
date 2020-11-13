@@ -22,7 +22,9 @@
         <!--过滤静态资源-->
         <mcv:resources mapping="/css/**" location="/css/"></mcv:resources>
         <mcv:resources mapping="/js/**" location="/js/"></mcv:resources>
-        <mcv:resources mapping="/images/**" location="/js/**"></mcv:resources>
-        <!--开启SpringMVC注解的支持-->
+        <mcv:resources mapping="/images/**" location="/images/"></mcv:resources>
+        <mcv:resources mapping="/fonts/**" location="/fonts/"></mcv:resources>
+
+    <!--开启SpringMVC注解的支持-->
         <mvc:annotation-driven/>
 </beans>

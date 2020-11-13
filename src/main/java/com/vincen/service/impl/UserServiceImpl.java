@@ -15,13 +15,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> findAll() {
-        System.out.println("业务层 查询所有用户");
         return userDao.findAll();
     }
 
     @Override
     public void SaveUser(User user) {
-        System.out.println("业务层 保存用户");
         userDao.SaveUser(user);
     }
 }

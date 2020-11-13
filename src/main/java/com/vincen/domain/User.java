@@ -3,50 +3,50 @@ package com.vincen.domain;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private Integer id;
-    private  String name;
-    private  String password;
-    private  String role;
+    private Integer user_id;
+    private String user_name;
+    private String user_password;
+    private Integer user_role_id;
 
-    public Integer getId() {
-        return id;
+    public Integer getUser_id() {
+        return user_id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
-    public String getName() {
-        return name;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUser_password() {
+        return user_password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
     }
 
-    public String getRole() {
-        return role;
+    public Integer getUser_role_id() {
+        return user_role_id;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setUser_role_id(Integer user_role_id) {
+        this.user_role_id = user_role_id;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", role='" + role + '\'' +
+                "user_id=" + user_id +
+                ", user_name='" + user_name + '\'' +
+                ", user_password='" + user_password + '\'' +
+                ", user_role_id=" + user_role_id +
                 '}';
     }
 }

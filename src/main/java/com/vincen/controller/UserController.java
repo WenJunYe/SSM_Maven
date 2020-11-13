@@ -27,13 +27,14 @@ public class UserController {
         List<User> list = userService.findAll();
         System.out.println(list);
         model.addAttribute("list",list);
-        return "list";
+        return "login";
     }
 
     @RequestMapping("/save")
-    public void save(User user, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String save(User user, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println(user);
         userService.SaveUser(user);
-        response.sendRedirect(request.getContextPath()+"/user/findAll");
-        return;
+//        response.sendRedirect(request.getContextPath()+"/user/findAll");
+        return "blog/artile";
     }
 }
